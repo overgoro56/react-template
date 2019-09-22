@@ -1,6 +1,6 @@
 This project is for react beginner developers
 
-### Useing libraries
+### Using libraries
 
 react-router-dom
 styled-components
