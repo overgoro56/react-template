@@ -1,0 +1,8 @@
+node_modules/*
+src/**/*.test.tsx
+src/react-app-env.d.ts
+src/**/__tests__/*
+src/**/*.svg
+src/**/*.png
+src/**/*.css
+src/serviceWorker.ts
