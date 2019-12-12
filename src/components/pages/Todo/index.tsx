@@ -1,18 +1,12 @@
 import React from 'react';
-import { Logo } from 'assets/svg';
+import { Todo } from 'components/organisms';
 
-const Todo: React.FC = () => {
+const TodoPage: React.FC = () => {
   return (
     <div>
-      <header>
-        <Logo />
-        <p>Edit src/App.tsx and save to reload.</p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Todo />
     </div>
   );
 };
 
-export default Todo;
+export default TodoPage;
