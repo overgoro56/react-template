@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
-import { TodoCard } from 'components/molecules';
+import { TodoCard2 } from 'components/molecules';
 
 const Todo: FC = props => {
   return (
     <div>
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
+      <TodoCard2 />
+      <TodoCard2 />
+      <TodoCard2 />
+      <TodoCard2 />
     </div>
   );
 };
