@@ -5,7 +5,7 @@ const Todo = lazy(() =>
 );
 
 const Todo2 = lazy(() =>
-  import(/* webpackChunkName: 'todo2' */ 'components/pages/Todo2'),
+  import(/* webpackChunkName: 'todo' */ 'components/pages/Todo2'),
 );
 
 export { Todo, Todo2 };
