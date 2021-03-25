@@ -8,6 +8,11 @@ type RoutesProps = {
   location?: H.Location;
 };
 
+Routes.defaultProps = {
+  history: null,
+  location: null
+};
+
 export default function Routes(props: RoutesProps) {
   return (
     <Switch>

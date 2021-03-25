@@ -17,6 +17,8 @@
     }
   },
   "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],    
     "react/jsx-filename-extension": "off",
     "react/prop-types": 0,
     "no-underscore-dangle": 0,
@@ -46,7 +48,18 @@
     "@typescript-eslint/ban-ts-ignore": "off",
     "jsx-a11y/control-has-associated-label": "off",
     "react/jsx-curly-brace-presence": "off",
-    "react/state-in-constructor": [2, "never"]
+    "react/state-in-constructor": [2, "never"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
+   "@typescript-eslint/explicit-module-boundary-types": "off"  
   },
   "globals": {
     "window": true,
