@@ -3,7 +3,6 @@
     "react-app",
     "airbnb",
     "prettier",
-    "prettier/react",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -59,7 +58,8 @@
         "tsx": "never"
       }
    ],
-   "@typescript-eslint/explicit-module-boundary-types": "off"  
+   "@typescript-eslint/explicit-module-boundary-types": "off",
+   "arrow-body-style": "off"
   },
   "globals": {
     "window": true,
