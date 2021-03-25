@@ -1,18 +1,19 @@
 import React from 'react';
-import { Logo } from 'assets/svg';
+import { Todo } from 'components/organisms';
+import useTodo from './useTodo';
 
-const Todo2: React.FC = () => {
+const TodoPage: React.FC = () => {
+  const { todos, handlePostTodo, todoText, handleChangeTodoText } = useTodo();
   return (
     <div>
-      <header>
-        <Logo />
-        <p>Edit src/App.tsx and save to reload.</p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Todo
+        todos={todos}
+        onPostClick={handlePostTodo}
+        todoText={todoText}
+        handleChangeTodoText={handleChangeTodoText}
+      />
     </div>
   );
 };
 
-export default Todo2;
+export default TodoPage;
