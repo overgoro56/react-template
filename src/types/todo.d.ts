@@ -1,4 +1,4 @@
-export type TodoType = {
+interface Todo {
   text: string;
   done: boolean;
-};
+}

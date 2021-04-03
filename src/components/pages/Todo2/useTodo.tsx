@@ -1,13 +1,12 @@
 import { useState, useCallback, ChangeEvent } from 'react';
-import { TodoType } from 'types/todo';
 
-const initTodos: TodoType[] = [
+const initTodos: Todo[] = [
   { text: 'todo1', done: false },
   { text: 'todo2', done: false },
 ];
 
 const useTodo = () => {
-  const [todos, setTodos] = useState<TodoType[]>(initTodos);
+  const [todos, setTodos] = useState<Todo[]>(initTodos);
   const [todoText, setTodoText] = useState<string>('');
 
   const handlePostTodo = useCallback(
